@@ -40,7 +40,7 @@ function mostrarResultado (msg) {
     resultado.innerHTML = '';
     const p = criaP();
 
-    if (msg >= 30 || msg <= 18.5) {
+    if (msg >= 30 || msg <= 18.5 || msg === "Peso inválido" || msg === "Altura inválida") {
         p.classList.add('resultado-ruim')
     } else {
         p.classList.add('resultado-bom')
